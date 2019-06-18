@@ -1,0 +1,13 @@
+#!C:\\Program Files\\nodejs\\node.exe
+
+const mockData = {
+  data: "yd",
+  result: {
+    title: "冲击月薪三万"
+  }
+}
+
+const json2ts = require('json2ts')
+const jsonContent = JSON.stringify(mockData)
+let result = json2ts.convert(jsonContent)
+console.log(result)
